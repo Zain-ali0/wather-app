@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Gluten', cursive;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape') no-repeat center center;
+    background-size:cover;
+    font-size: 120%;
+}
+
+.Card{
+    background-color:rgba(95, 106, 106,0.7 );
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    padding: 2em;
+    border-radius:30px ;
+    width:50rem ;
+    max-width: 50rem;
+    margin: 1em;
+    color: white;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    height: 1.5rem;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-family:'Open Sans Condensed', sans-serif;
+    font-weight: 1rem;
+    background-color:rgba(255,255,255,0.5 )
+}
+.search-bar:hover{
+    background-color:rgba(255,255,255);
+}
+.search-bar:focus{
+    background-color:rgba(255,255,255);
+}
+
+button{
+    border: none;
+    width: 3rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    outline: none;
+    cursor: pointer;
+    background-color:rgba(255,255,255,0.5 );
+}
+
+button:hover{
+    background-color:rgba(255,255,255 );
+}
+
+
+
+.description{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.humidity{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.wind{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.city{
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+}
+
+.temp{
+    position: relative;
+    top: 30px;
+}
+
+h1.temp{
+    margin: 0;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}

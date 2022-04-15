@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c286bd9a6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Indie+Flower&family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Weather APP</title>
+</head>
+<body>
+    <div class="Card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="weather loading">
+            <div class="city"><h2> </h2></div>
+            <h1><div class="temp"></div></h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="description"></div>
+            </div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
